@@ -1,0 +1,59 @@
+TEST_SET = ['98', '71', '99', '58', '56']
+
+LINEAR REGRESSION:
+results_linear_reg_test
+AVG_PRECISION : 0.6371
+results_with_dL_lin_reg_test
+AVG_PRECISION: 0.6314
+
+results_linear_reg_train
+AVG_PRECISION: 0.3854
+
+
+DECISION TREE:
+results_dec_tree_test
+AVG_PRECISION : 0.4394
+results_with_dL_dec_tree_test
+AVG_PRECISION : 0.4618
+results_with_IDF_SUM
+AVG_PRECISION : 0.4786
+
+results_dec_tree_train
+AVG_PRECISION : 0.9991
+
+
+SVM REGRESSION(SVR):
+results_svm_reg_test
+AVG_PRECISION : 0.4467
+results_with_dL_SVM_test
+AVG_PRECISION : 0.4324
+
+results_svm_reg_train
+AVG_PRECISION : 0.5689
+
+SVM LinearSVR:
+0.5404
+
+PERCEPTRON:
+TRAIN: 0.4995 n_iter=20
+
+TEST_SET = ['93', '100', '97', '58', '56']
+LINEAR REGRESSION:
+AVG_PRECISION : 0.7731
+
+----------------------------------------------------
+CRAWL_DATA
+TRAIN ['151203', '151202'] TEST ['151201']
+
+LINEAR REGRESSION: 0.5237
+SVM SVR: 0.4391
+SVM LinearSVR: 0.5370
+DECISION TREE: 0.4237
+PERCEPTRON: 0.4410
+
+
+TRAIN ['151201', '151202'] TEST ['151203']
+LINEAR REGRESSION: 0.6879
+SVM SVR: 0.2251
+SVM LinearSVR: 0.49
+DECISION TREE: 0.5605

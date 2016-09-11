@@ -1,0 +1,1 @@
+elastic_host = {'host': 'localhost', 'port': 9200}

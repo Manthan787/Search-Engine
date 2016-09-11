@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <p class="navbar-brand">Evaluator</p>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <input type="text" id="query" class="form-control input-lg" placeholder="Enter Query">
+            </div>
+        </div>
+        <div class="row">
+            <div align="center">
+                <div class="col-xs-6" align="center">
+                    <input type="text" class="form-control" id="queryID" placeholder="Enter QueryID">
+                </div>
+                <div class="col-xs-6" align="right">
+                    <input type="button" class="btn btn-success" value="Store Grades" onclick="storeGrades()">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='search.js')}}"></script>
+</body>
+</html>
